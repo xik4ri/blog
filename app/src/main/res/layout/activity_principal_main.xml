@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".PrincipalMainActivity">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="144dp"
+
+            android:background="#17171717" android:layout_margin="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.071"
+            android:id="@+id/lineartext"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.493">
+
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="92dp"
+                android:inputType="text"
+                android:ems="10"
+                android:id="@+id/ContPost" android:hint="escribir post..."/>
+        <Button
+                android:text="publicar"
+                android:layout_width="105dp"
+                app:backgroundTint="@null"
+
+                android:layout_height="wrap_content" android:id="@+id/PublicarButton" android:textSize="10sp"
+                android:textColorLink="#000000"/>
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="411dp"
+            android:layout_height="48dp"
+            android:background="#CFCFCF" android:id="@+id/linearLayouttop"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="1dp" android:layout_marginEnd="1dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="0.0">
+        <TextView
+                android:text="BLOGFINDER"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content" android:id="@+id/textView3" android:textSize="24sp"
+                android:fontFamily="@font/audiowide"/>
+        <Button
+                android:text="Buscar"
+
+                android:layout_width="wrap_content"
+                app:backgroundTint="@null"
+
+                android:layout_height="match_parent" android:id="@+id/btnBuscar" android:baselineAligned="false"/>
+        <Button
+                android:text="Perfil"
+                android:layout_width="199dp"
+                app:backgroundTint="@null"
+
+
+                android:layout_height="wrap_content" android:id="@+id/btnperfil" android:layout_weight="1"/>
+    </LinearLayout>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="529dp" android:layout_marginEnd="1dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="1dp" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintVertical_bias="0.92" android:id="@+id/scrollView2">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="vertical" android:id="@+id/linearPost"/>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
